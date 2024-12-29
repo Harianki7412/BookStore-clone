@@ -47,7 +47,7 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get('https://hariom-book-store.netlify.app/book');
+        const res = await axios.get('https://bookstore-clone.onrender.com/book');
         console.log(res.data);
         setBook(res.data.filter((data) => data.category === 'Free'));
       } catch (error) {

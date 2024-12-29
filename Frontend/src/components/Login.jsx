@@ -16,7 +16,7 @@ function Login() {
             email: data.email,
             password: data.password,
         };
-        await axios.post('https://hariom-book-store.netlify.app/user/login', userInfo)
+        await axios.post('https://bookstore-clone.onrender.com/user/login', userInfo)
             .then((res) => {
                 console.log(res.data);
                 if (res.data) {
