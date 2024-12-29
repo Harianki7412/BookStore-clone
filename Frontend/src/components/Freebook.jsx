@@ -47,7 +47,7 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get('https://bookstore-ieql.onrender.com/book');
+        const res = await axios.get('https://books-sto.netlify.app/book');
         console.log(res.data);
         setBook(res.data.filter((data) => data.category === 'Free'));
       } catch (error) {
